@@ -35,6 +35,7 @@ Extend to [4, 2, 4] → duplicate found → remove from left → [2, 4]
 Continue to [2, 4, 5] → sum = 11
 
 Extend to [2, 4, 5, 6] → sum = 17
+
 ✅ Maximum sum with unique subarray = 17
 
 ✅ Approach: Sliding Window + HashSet
@@ -73,6 +74,8 @@ class Solution {
 }
 ```
 ⚙️ Time and Space Complexity
-Complexity	Value
-🕒 Time	O(n)
-🧠 Space	O(n)
+Time Complexity: O(n)
+Each element is added and removed from the set at most once.
+
+Space Complexity: O(n)
+In the worst case, the HashSet will store all unique elements.
